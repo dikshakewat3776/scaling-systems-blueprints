@@ -180,7 +180,6 @@ Result: Customer charged ₹200 instead of ₹100 ❌
 **Real-World Impact:**
 - Customer complaints and chargebacks
 - Financial losses and reconciliation issues
-- Compliance violations (PCI-DSS, SOX)
 - Loss of customer trust
 
 ---

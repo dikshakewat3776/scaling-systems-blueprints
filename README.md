@@ -44,23 +44,14 @@ These projects are designed to be studied in order, building complexity:
 1. **Idempotency** - Foundation for safe retries in distributed systems
 2. *More projects coming soon...*
 
-## 🎓 Interview Preparation
+## Preparation
 
 Each project includes:
 - Detailed explanations of the problem and solution
 - Architecture diagrams
 - Failure scenario testing
 - Production considerations
-- Interview talking points
-
-## 🛠️ Tech Stack Overview
-
-Projects in this repository use:
-- **Python** (FastAPI) for backend services
-- **PostgreSQL** for persistent data storage
-- **Redis** for caching and distributed coordination
-- **Docker** for containerization
-- **Alembic** for database migrations
+- Talking points
 
 ## 📝 Contributing
 
