@@ -27,6 +27,26 @@ This repository contains hands-on implementations of critical system design patt
 
 ---
 
+### 2. [Realtime Chat Queue - WhatsApp-like Messaging](./realtime-chat-queue)
+
+**Problem Solved:** Building a scalable messaging system with ordering guarantees and reliable delivery.
+
+**Key Concepts:**
+- Async processing
+- At-least-once delivery
+- Ordering guarantees (per chat)
+- Consumer groups
+- Backpressure handling
+- WebSocket real-time delivery
+
+**Tech Stack:** FastAPI, PostgreSQL, Redis Streams, WebSocket
+
+**Status:** ✅ Complete
+
+[View Project →](./realtime-chat-queue)
+
+---
+
 ## 🚀 Getting Started
 
 Each project is self-contained with its own README, Docker setup, and documentation. Navigate to a project directory to get started:
@@ -42,7 +62,8 @@ See each project's README for detailed setup and run instructions.
 These projects are designed to be studied in order, building complexity:
 
 1. **Idempotency** - Foundation for safe retries in distributed systems
-2. *More projects coming soon...*
+2. **Queue-Based Systems** - Async processing with ordering guarantees
+3. *More projects coming soon...*
 
 ## Preparation
 
