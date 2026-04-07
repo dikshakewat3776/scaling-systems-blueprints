@@ -45,16 +45,6 @@ This repository contains hands-on implementations of critical system design patt
 
 ---
 
-## 🚀 Getting Started
-
-Each project is self-contained with its own README, Docker setup, and documentation. Navigate to a project directory to get started:
-
-```bash
-cd 1.payment-idempotency-simple
-```
-
-See each project's README for detailed setup and run instructions.
-
 ## 📖 Learning Path
 
 These projects are designed to be studied in order, building complexity:
