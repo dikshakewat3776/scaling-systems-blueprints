@@ -8,42 +8,40 @@ This repository contains hands-on implementations of critical system design patt
 
 ## 📚 Projects
 
-### 1. [Idempay - Payment Service with Idempotency](./payment-service-idempotency)
+### 1. [Payment Idempotency Simple](./1.payment-idempotency-simple)
 
-**Problem Solved:** Preventing duplicate payments in distributed systems when retries occur.
+**Problem Solved:** Preventing duplicate charges when clients retry the same payment request.
 
 **Key Concepts:**
 - Idempotency patterns
-- Distributed locking
-- Race condition handling
-- Database constraints
-- Caching strategies
+- Request deduplication with idempotency keys
+- Stable retry responses
+- Side-effect safety in distributed systems
 
-**Tech Stack:** FastAPI, PostgreSQL, Redis
+**Tech Stack:** Python (in-memory demo)
 
 **Status:** ✅ Complete
 
-[View Project →](./payment-service-idempotency)
+[View Project →](./1.payment-idempotency-simple)
 
 ---
 
-### 2. [Realtime Chat Queue - WhatsApp-like Messaging](./realtime-chat-queue)
+### 2. [Real-Time Order Processing](./2.real-time-order-processing)
 
-**Problem Solved:** Building a scalable messaging system with ordering guarantees and reliable delivery.
+**Problem Solved:** Building an event-driven order pipeline with scalable ingestion and reliable asynchronous processing.
 
 **Key Concepts:**
-- Async processing
-- At-least-once delivery
-- Ordering guarantees (per chat)
-- Consumer groups
-- Backpressure handling
-- WebSocket real-time delivery
+- Event-driven architecture
+- Kafka topics and partitions
+- Consumer groups and rebalancing
+- Throughput and reliability trade-offs
+- Retry handling patterns
 
-**Tech Stack:** FastAPI, PostgreSQL, Redis Streams, WebSocket
+**Tech Stack:** Python, Apache Kafka, Docker
 
 **Status:** ✅ Complete
 
-[View Project →](./realtime-chat-queue)
+[View Project →](./2.real-time-order-processing)
 
 ---
 
@@ -52,7 +50,7 @@ This repository contains hands-on implementations of critical system design patt
 Each project is self-contained with its own README, Docker setup, and documentation. Navigate to a project directory to get started:
 
 ```bash
-cd payment-service-idempotency
+cd 1.payment-idempotency-simple
 ```
 
 See each project's README for detailed setup and run instructions.
@@ -61,23 +59,13 @@ See each project's README for detailed setup and run instructions.
 
 These projects are designed to be studied in order, building complexity:
 
-1. **Idempotency** - Foundation for safe retries in distributed systems
-2. **Queue-Based Systems** - Async processing with ordering guarantees
+1. **Idempotency** - Foundation for safe retries and duplicate prevention
+2. **Kafka Pipelines** - Event-driven processing with scalable consumers
 3. *More projects coming soon...*
-
-## Preparation
-
-Each project includes:
-- Detailed explanations of the problem and solution
-- Architecture diagrams
-- Failure scenario testing
-- Production considerations
-- Talking points
 
 ## 📝 Contributing
 
 Each project is designed to be:
 - Self-contained and runnable
 - Well-documented with explanations
-- Production-ready patterns (not just demos)
-- Interview-ready with clear talking points
+- Production-ready patterns
